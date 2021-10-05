@@ -1,3 +1,50 @@
+header {
+    min-height: 200px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    
+}
+
+.profile-picture {
+    height: 100px;
+    width: 100px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-image: url(../assets/56975146.png); 
+    background-size:cover;
+    margin-left: 4px;
+}
+
+.profile-name {
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(250, 250, 250);
+    margin-left: 4px;
+}
+.subtext {
+    margin-top: 8px;
+    color:rgb(255, 250, 250);
+    font-weight:540;
+    margin-left: 8px;
+}
+
+.main{
+    margin-top: 40px;
+    display:flex;
+    justify-content: center;
+}
+.main-container{
+    max-width: 750px;
+    min-width: 600px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,15 +54,95 @@ body {
     text-decoration: none;
 }
 
-
-
 footer {
     min-height: 100px;
-    background-color: #eaecee70;
-    color: #929eaa;
+    background-color: #5b5b5c70;
+    color: #84909c;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     font-size: 14px;
+}
+
+.post{
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    min-height: 200px;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    margin-bottom: 8px;
+}
+.post:hover{
+    transform: translate3d(0,-5px,0);
+    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,.1);
+}
+.post-image{
+    flex-basis: 40%;
+    background-size: cover;
+}
+.post-content{
+    flex-basis: 60%;
+    padding: 16px;
+}
+.post-date{
+    font-size: 12px;
+    color: rgb(209, 178, 176);
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.post-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.post-text{
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.nav-button.new-post-button{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 28px;
+    height: 28px;
+    background-color: rgb(22, 11, 36);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    padding:5px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+#individual-post-title{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+#individual-post-date{
+    border-top: 1px solid rgb(220, 227, 226);
+    border-bottom: 1px solid rgb(220, 227, 226);
+    font-size: 12px;
+    color: rgb(209, 178, 176);
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#individual-post-content{
+
+    padding-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
 }
