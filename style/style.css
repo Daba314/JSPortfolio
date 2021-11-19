@@ -1,11 +1,13 @@
 header {
     min-height: 200px;
-    background: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;  
     
+}
+.home header{
+    background: rgb(0, 0, 0);
 }
 
 .profile-picture {
@@ -146,3 +148,8 @@ footer {
     font-weight: 500;
     line-height: 1.4;
 }
+a.post-link{
+    text-decoration:none;
+    color:black
+}
+
